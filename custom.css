@@ -1,0 +1,100 @@
+/* Global Styles */
+body {
+    background-color: #1f2424;
+    color: #ffffff;
+    font-family: "Menlo", "Meslo LG", monospace;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Navbar: Small, sleek, no underline */
+  .navbar {
+    background-color: #282f2f;
+    padding: 0.5rem 1rem;
+  }
+  .navbar .navbar-item {
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .navbar .navbar-item:hover {
+    color: #66d9ef;
+    text-decoration: none;
+  }
+  .navbar .navbar-burger {
+    margin: 0.5rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #1f2424;
+  }
+  .hero-body {
+    padding: 0;
+  }
+  /* Custom Hero Title - Large and centered */
+  .custom-hero-title {
+    font-size: 4rem !important;  /* Adjusted size */
+    line-height: 1.2;
+  }
+  
+  /* Blink Animation for the underscore */
+  #blink {
+    animation: blink 1s steps(1) infinite;
+  }
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    50.01%, 100% { opacity: 0; }
+  }
+  
+  /* Flex centering (Bulma classes in use) */
+  .is-flex {
+    display: flex;
+  }
+  .is-justify-content-center {
+    justify-content: center;
+  }
+  .is-align-items-center {
+    align-items: center;
+  }
+  
+  /* Footer UFO Container */
+  #footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Adjust as needed */
+    pointer-events: none;  /* Ensure footer doesn't block other elements */
+  }
+  #ufo {
+    position: absolute;
+    font-size: 2rem;  /* UFO size */
+    transition: all 0.3s ease;
+    pointer-events: auto;  /* Allow interactions on the UFO */
+  }
+  
+  /* Links & Buttons */
+  a, .button {
+    color: #1abc9c;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  a:hover, .button:hover {
+    color: #66d9ef;
+    text-decoration: none;
+  }
+  
+  /* Code Blocks (Prism Overrides) */
+  pre[class*="language-"],
+  code[class*="language-"] {
+    background-color: #272822;
+    color: #f8f8f2;
+    border-radius: 0.3em;
+    padding: 1em;
+    overflow-x: auto;
+  }
+  
